@@ -10,8 +10,8 @@ func print_out(n int) {
 }
 
 func main() {
-	for i := 0; i < 10; i++ {
-		go print_out(i)
+	for y := 0; y < 10; y++ {
+		go print_out(y)
 	}
-	time.Sleep(time.Second * 2) // Aguarde a execução das goroutines
+	time.Sleep(time.Second * 2) 
 }
