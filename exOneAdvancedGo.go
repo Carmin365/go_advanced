@@ -10,8 +10,8 @@ func stamp(n int) {
 }
 
 func main() {
-	for i := 0; i < 10; i++ {
-		go stamp(i)
+	for y := 0; y < 10; y++ {
+		go stamp(y)
 	}
-	time.Sleep(time.Second * 2) // Aguarde a execução das goroutines
+	time.Sleep(time.Second * 2) 
 }
